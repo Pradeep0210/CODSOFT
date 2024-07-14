@@ -3,32 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <div class="display" id="display"></div>
-        <div class="buttons">
-            <button class="button" onclick="clearDisplay()">C</button>
-            <button class="button" onclick="appendCharacter('/')">/</button>
-            <button class="button" onclick="appendCharacter('*')">*</button>
-            <button class="button" onclick="appendCharacter('-')">-</button>
-            <button class="button" onclick="appendCharacter('7')">7</button>
-            <button class="button" onclick="appendCharacter('8')">8</button>
-            <button class="button" onclick="appendCharacter('9')">9</button>
-            <button class="button" onclick="appendCharacter('+')">+</button>
-            <button class="button" onclick="appendCharacter('4')">4</button>
-            <button class="button" onclick="appendCharacter('5')">5</button>
-            <button class="button" onclick="appendCharacter('6')">6</button>
-            <button class="button" onclick="calculateResult()">=</button>
-            <button class="button" onclick="appendCharacter('1')">1</button>
-            <button class="button" onclick="appendCharacter('2')">2</button>
-            <button class="button" onclick="appendCharacter('3')">3</button>
-            <button class="button" onclick="appendCharacter('0')">0</button>
-            <button class="button" onclick="appendCharacter('.')">.</button>
+    <header>
+        <h1><i>Pradeep</i></h1>
+        <p><u>Undergraduate Computer Science</u></p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Pradeep, a passionate and dedicated computer science student, With a strong foundation in programming and a keen interest in technology, I am eager to solve real-world problems through innovative software solutions </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python programming</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java script</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Movie ticket booking</h3>
+            <img src="https://images.pexels.com/photos/1200450/pexels-photo-1200450.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Project 1 Image">
+            <p>Welcome to MovieMaster – Your Ultimate Movie Booking Destination!
+                At MovieMaster, we bring the magic of cinema right to your fingertips. Our user-friendly platform is designed to provide a seamless movie ticket booking experience, whether you're planning a night out with friends, a romantic date, or a family movie day.</p>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <div class="project">
+            <h3>Image gallery</h3>
+            <img src="https://images.pexels.com/photos/4072509/pexels-photo-4072509.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Project 2 Image">
+            <p>Welcome to PicGallery – Your Ultimate Online Image Gallery!
+                Discover the world through stunning visuals at PicGallery, your go-to destination for an expansive collection of high-quality images. Whether you're a professional photographer, a graphic designer, or simply an art enthusiast, PicGallery offers a platform to explore, share, and appreciate the beauty of visual art.</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="Pradeep_Resume.pdf" download>Download Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><b>Email: abc@gmail.com</b></p>
+        <p><b>Phone: 8945002648</b></p>
+    </section>
 </body>
 </html>

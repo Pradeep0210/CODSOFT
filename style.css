@@ -1,47 +1,62 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
 }
 
-.calculator {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header {
+    background-color: #080a08ec;
+    color: rgb(216, 203, 203);
+    text-align: center;
+    text-shadow: #88a089;
+    padding: 1em 0;
 }
 
-.display {
-    background-color: #222;
-    color: #fff;
-    font-size: 2em;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: right;
-    margin-bottom: 20px;
+section {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 800px;
+    color:#130803
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+#about img, .project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.button {
-    padding: 20px;
-    font-size: 1.5em;
-    background-color: #9580b6;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+h2 {
+    border-bottom: 2px solid #0b0f0b;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
-.button:hover {
-    background-color: #ddd;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f4f4f4;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border-left: 5px solid #f13708;
+}
+
+.project {
+    margin: 1em 0;
+}
+
+a {
+    text-decoration: none;
+    color: #778b78;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
