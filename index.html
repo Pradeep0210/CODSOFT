@@ -3,55 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-       <b> <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li></b>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    
-    <section class="hero">
-      <h1>Welcome to Our Landing Page</h1>
-      <p><b> We specialize in delivering top-notch solutions to help businesses and individuals thrive in the digital world. Our team of dedicated professionals is committed to providing exceptional service and innovative solutions tailored to meet your unique needs</b></p>
-    
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service">
-               <button> <h3>Web Development</h3>
-                </button>
-            </div>
-            <br>
-            <div class="service">
-               <button><h3>Mobile App Development</h3>
-                </button> 
-            </div>
-            <br>
-            <div class="service">
-               <button> <h3>Digital Marketing</h3>
-                </button>
-            </div>
-            <br>
+    <div class="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="appendCharacter('/')">/</button>
+            <button class="button" onclick="appendCharacter('*')">*</button>
+            <button class="button" onclick="appendCharacter('-')">-</button>
+            <button class="button" onclick="appendCharacter('7')">7</button>
+            <button class="button" onclick="appendCharacter('8')">8</button>
+            <button class="button" onclick="appendCharacter('9')">9</button>
+            <button class="button" onclick="appendCharacter('+')">+</button>
+            <button class="button" onclick="appendCharacter('4')">4</button>
+            <button class="button" onclick="appendCharacter('5')">5</button>
+            <button class="button" onclick="appendCharacter('6')">6</button>
+            <button class="button" onclick="calculateResult()">=</button>
+            <button class="button" onclick="appendCharacter('1')">1</button>
+            <button class="button" onclick="appendCharacter('2')">2</button>
+            <button class="button" onclick="appendCharacter('3')">3</button>
+            <button class="button" onclick="appendCharacter('0')">0</button>
+            <button class="button" onclick="appendCharacter('.')">.</button>
         </div>
-      
-      <footer>
-        <div class="container">
-          <button>Get started</button>
-            <p>&copy; 2024 . All rights reserved.</p>
-            <p>Contact us at <a href="mailto:email@example.com">email@example.com</a></p>
-        </div>
-    </footer>
-    </section>
-    
-  </main>
-
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
